@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- SEO Metatag -->
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+    <meta name="author" content="Arsenic Design System" />
+    <!-- Responsive Metatag -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <!-- Favicon Icon -->
+    <!-- <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16" /> -->
+    <title>Arsenic Design System</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="7952b62b3f59c69bd2e19c1e8de7b5d7.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="0c992ca885a4c61fa32639a6299bbddf.css" />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="9d45000c6d75b5ac188f4fe3b318a00b.css" />
+    <!-- COLOR PICKER CSS -->
+    <!-- <link rel="stylesheet" href="../assets/css/codemirror-colorpicker.css" /> -->
+  </head>
+
+  <body>
+    <!-- <div class="demo-styling"> -->
+    <!-- <div class="demo-body"> -->
+    <div class="popup-body" id="popup-body">
+      <figure class="brand-logo">
+        <a
+          ><img
+            src="49afadd86c19465a595617f165bba314.svg"
+            alt="Arsenic Logo"
+            width="42"
+            height=""
+            class="img-fluid"
+        /></a>
+      </figure>
+      <div class="popup-nav-tabs">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="typeface-tab"
+              data-toggle="tab"
+              href="#typeface"
+              role="tab"
+              aria-controls="typeface"
+              aria-selected="false"
+              >Typeface</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="colors-tab"
+              data-toggle="tab"
+              href="#colors"
+              role="tab"
+              aria-controls="colors"
+              aria-selected="true"
+              >Colors</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!-- Color Tab -->
+        <div
+          class="tab-pane colors-tab show active"
+          id="colors"
+          role="tabpanel"
+          aria-labelledby="colors-tab"
+        >
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6">
+                <div class="color-shades-block">
+                  <p class="d-flex justify-content-between">
+                    <label for="select-all-colors" class="text mb-0">
+                      <input
+                        type="checkbox"
+                        name="select-color-checkbox"
+                        id="select-all-colors"
+                        class="mr-2"
+                      />
+                      Select All</label
+                    >
+                    <span class="text">Base 500 Shades</span>
+                  </p>
+                  <!-- <p class="text mb-2">Base 500 Shades</p> -->
+                  <span id="test-span"></span>
+                  <ul class="color-shades-list">
+                    <li class="color-shades-list-item">
+                      <span class="color-shades-checkbox">
+                        <label for="select-primary" class="sr-only"
+                          >select color</label
+                        >
+                        <input
+                          type="checkbox"
+                          name="select-color-checkbox"
+                          id="primary-checkbox"
+                          checked
+                        />
+                      </span>
+                      <span
+                        class="color-preview-block"
+                        id="primary-color-preview"
+                      >
+                        <span
+                          class="color-preview-title"
+                          id="primary-preview-title"
+                          >primary</span
+                        >
+                        <span
+                          title="Revert Edited Color"
+                          class="material-icons color-revert-icon"
+                          id="primary-revert"
+                          style="display: none"
+                        >
+                          replay
+                        </span>
+                        <span
+                          class="color-picker-icon"
+                          id="primary-icon"
+                          style="display: none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            id="primary-color-picker-icon"
+                            class="icon"
+                          >
+                            <path
+                              fill="currentcolor"
+                              d="M14.4103719.627690393C13.6242281-.20906288 12.3495849-.209305076 11.562921.627413597L11.0194828 1.20581272C10.72756.895144197 10.2547294.895144197 9.96283905 1.20581272 9.67088366 1.51623905 9.67088366 2.02004175 9.96283905 2.33046808L10.138903 2.51796254 4.26832743 8.7666591 4.2678073 8.7666591 2.23003607 10.9357337C2.06808064 11.1081082 1.9726043 11.338679 1.96233174 11.5821899L1.95745552 11.6978905C1.95745552 11.6984441 1.95745552 11.6989285 1.95745552 11.6994821L1.8752425 13.6614097C1.87186165 13.7525101 1.90394716 13.8408079 1.96428223 13.9052667 2.02120394 13.9661271 2.09902836 14 2.17981103 14 2.18419963 14 2.18855572 14 2.19346444 13.9997232L3.17078843 13.9536713 3.17130856 13.9536713 3.76679222 13.9254728 4.03719472 13.9128094C4.33636691 13.8985544 4.62052035 13.7654503 4.8326358 13.5399656L12.6637758 5.20526778 12.8102574 5.36113833C12.9562188 5.5164207 13.1474316 5.59409648 13.3385793 5.59409648 13.5297595 5.59409648 13.7210048 5.5164207 13.8669337 5.36113833 14.1588566 5.0506774 14.1588566 4.54687471 13.8669337 4.23648298L14.4103394 3.65804925C15.1965481 2.82133058 15.1965481 1.46468586 14.4103719.627690393zM8.75529259 7.86544704L6.00510601 8.41765438 10.4911609 3.64279089 11.6072296 4.83010586 8.75529259 7.86544704zM2.34400439 14C1.04964153 14 0 14.4475932 0 15.0001713 0 15.5524558 1.04964153 16 2.34400439 16 3.63836725 16 4.6875 15.5525047 4.6875 15.0001713 4.6875 14.4475442 3.63836725 14 2.34400439 14z"
+                            />
+                          </svg>
+                        </span>
+                        <input
+                          type="hidden"
+                          name="arsenicColors"
+                          id="primary-color"
+                          class="color-preview-input"
+                          value=""
+                        />
+                        <input
+                          type="hidden"
+                          name="isColorReverted"
+                          id="primary-color-revert"
+                          value="false"
+                        />
+                      </span>
+                    </li>
+
+                    <li class="color-shades-list-item">
+                      <span class="color-shades-checkbox">
+                        <label for="select-secondary" class="sr-only"
+                          >select color</label
+                        >
+                        <input
+                          type="checkbox"
+                          name="select-color-checkbox"
+                          id="secondary-checkbox"
+                          value=""
+                        />
+                      </span>
+                      <span
+                        class="color-preview-block"
+                        id="secondary-color-preview"
+                      >
+                        <span
+                          class="color-preview-title"
+                          id="secondary-preview-title"
+                          >secondary</span
+                        ><span
+                          title="Revert Edited Color"
+                          class="material-icons color-revert-icon"
+                          id="secondary-revert"
+                          style="display: none"
+                        >
+                          replay
+                        </span>
+                        <span
+                          class="color-picker-icon"
+                          id="secondary-icon"
+                          style="display: none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            id="secondary-color-picker-icon"
+                            class="icon"
+                          >
+                            <path
+                              fill="currentcolor"
+                              d="M14.4103719.627690393C13.6242281-.20906288 12.3495849-.209305076 11.562921.627413597L11.0194828 1.20581272C10.72756.895144197 10.2547294.895144197 9.96283905 1.20581272 9.67088366 1.51623905 9.67088366 2.02004175 9.96283905 2.33046808L10.138903 2.51796254 4.26832743 8.7666591 4.2678073 8.7666591 2.23003607 10.9357337C2.06808064 11.1081082 1.9726043 11.338679 1.96233174 11.5821899L1.95745552 11.6978905C1.95745552 11.6984441 1.95745552 11.6989285 1.95745552 11.6994821L1.8752425 13.6614097C1.87186165 13.7525101 1.90394716 13.8408079 1.96428223 13.9052667 2.02120394 13.9661271 2.09902836 14 2.17981103 14 2.18419963 14 2.18855572 14 2.19346444 13.9997232L3.17078843 13.9536713 3.17130856 13.9536713 3.76679222 13.9254728 4.03719472 13.9128094C4.33636691 13.8985544 4.62052035 13.7654503 4.8326358 13.5399656L12.6637758 5.20526778 12.8102574 5.36113833C12.9562188 5.5164207 13.1474316 5.59409648 13.3385793 5.59409648 13.5297595 5.59409648 13.7210048 5.5164207 13.8669337 5.36113833 14.1588566 5.0506774 14.1588566 4.54687471 13.8669337 4.23648298L14.4103394 3.65804925C15.1965481 2.82133058 15.1965481 1.46468586 14.4103719.627690393zM8.75529259 7.86544704L6.00510601 8.41765438 10.4911609 3.64279089 11.6072296 4.83010586 8.75529259 7.86544704zM2.34400439 14C1.04964153 14 0 14.4475932 0 15.0001713 0 15.5524558 1.04964153 16 2.34400439 16 3.63836725 16 4.6875 15.5525047 4.6875 15.0001713 4.6875 14.4475442 3.63836725 14 2.34400439 14z"
+                            />
+                          </svg>
+                        </span>
+                        <input
+                          type="hidden"
+                          name="arsenicColors"
+                          id="secondary-color"
+                          class="color-preview-input"
+                          value=""
+                        />
+                        <input
+                          type="hidden"
+                          name="isColorReverted"
+                          id="secondary-color-revert"
+                          value="false"
+                        />
+                      </span>
+                    </li>
+
+                    <li class="color-shades-list-item">
+                      <span class="color-shades-checkbox">
+                        <label for="select-tertiary" class="sr-only"
+                          >select color</label
+                        >
+                        <input
+                          type="checkbox"
+                          name="select-color-checkbox"
+                          id="tertiary-checkbox"
+                        />
+                      </span>
+                      <span
+                        class="color-preview-block"
+                        id="tertiary-color-preview"
+                      >
+                        <span
+                          class="color-preview-title"
+                          id="tertiary-preview-title"
+                          >tertiary</span
+                        ><span
+                          title="Revert Edited Color"
+                          class="material-icons color-revert-icon"
+                          id="tertiary-revert"
+                          style="display: none"
+                        >
+                          replay
+                        </span>
+                        <span
+                          class="color-picker-icon"
+                          id="tertiary-icon"
+                          style="display: none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            id="tertiary-color-picker-icon"
+                            class="icon"
+                          >
+                            <path
+                              fill="currentcolor"
+                              d="M14.4103719.627690393C13.6242281-.20906288 12.3495849-.209305076 11.562921.627413597L11.0194828 1.20581272C10.72756.895144197 10.2547294.895144197 9.96283905 1.20581272 9.67088366 1.51623905 9.67088366 2.02004175 9.96283905 2.33046808L10.138903 2.51796254 4.26832743 8.7666591 4.2678073 8.7666591 2.23003607 10.9357337C2.06808064 11.1081082 1.9726043 11.338679 1.96233174 11.5821899L1.95745552 11.6978905C1.95745552 11.6984441 1.95745552 11.6989285 1.95745552 11.6994821L1.8752425 13.6614097C1.87186165 13.7525101 1.90394716 13.8408079 1.96428223 13.9052667 2.02120394 13.9661271 2.09902836 14 2.17981103 14 2.18419963 14 2.18855572 14 2.19346444 13.9997232L3.17078843 13.9536713 3.17130856 13.9536713 3.76679222 13.9254728 4.03719472 13.9128094C4.33636691 13.8985544 4.62052035 13.7654503 4.8326358 13.5399656L12.6637758 5.20526778 12.8102574 5.36113833C12.9562188 5.5164207 13.1474316 5.59409648 13.3385793 5.59409648 13.5297595 5.59409648 13.7210048 5.5164207 13.8669337 5.36113833 14.1588566 5.0506774 14.1588566 4.54687471 13.8669337 4.23648298L14.4103394 3.65804925C15.1965481 2.82133058 15.1965481 1.46468586 14.4103719.627690393zM8.75529259 7.86544704L6.00510601 8.41765438 10.4911609 3.64279089 11.6072296 4.83010586 8.75529259 7.86544704zM2.34400439 14C1.04964153 14 0 14.4475932 0 15.0001713 0 15.5524558 1.04964153 16 2.34400439 16 3.63836725 16 4.6875 15.5525047 4.6875 15.0001713 4.6875 14.4475442 3.63836725 14 2.34400439 14z"
+                            />
+                          </svg>
+                        </span>
+                        <input
+                          type="hidden"
+                          name="arsenicColors"
+                          id="tertiary-color"
+                          class="color-preview-input"
+                          value=""
+                        />
+                        <input
+                          type="hidden"
+                          name="isColorReverted"
+                          id="tertiary-color-revert"
+                          value="false"
+                        />
+                      </span>
+                    </li>
+
+                    <li class="color-shades-list-item">
+                      <span class="color-shades-checkbox">
+                        <label for="select-dark" class="sr-only"
+                          >select color</label
+                        >
+                        <input
+                          type="checkbox"
+                          name="select-color-checkbox"
+                          id="dark-checkbox"
+                        />
+                      </span>
+                      <span class="color-preview-block" id="dark-color-preview">
+                        <span
+                          class="color-preview-title"
+                          id="dark-preview-title"
+                          >dark</span
+                        ><span
+                          title="Revert Edited Color"
+                          class="material-icons color-revert-icon"
+                          id="dark-revert"
+                          style="display: none"
+                        >
+                          replay
+                        </span>
+                        <span
+                          class="color-picker-icon"
+                          id="dark-icon"
+                          style="display: none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            id="dark-color-picker-icon"
+                            class="icon"
+                          >
+                            <path
+                              fill="currentcolor"
+                              d="M14.4103719.627690393C13.6242281-.20906288 12.3495849-.209305076 11.562921.627413597L11.0194828 1.20581272C10.72756.895144197 10.2547294.895144197 9.96283905 1.20581272 9.67088366 1.51623905 9.67088366 2.02004175 9.96283905 2.33046808L10.138903 2.51796254 4.26832743 8.7666591 4.2678073 8.7666591 2.23003607 10.9357337C2.06808064 11.1081082 1.9726043 11.338679 1.96233174 11.5821899L1.95745552 11.6978905C1.95745552 11.6984441 1.95745552 11.6989285 1.95745552 11.6994821L1.8752425 13.6614097C1.87186165 13.7525101 1.90394716 13.8408079 1.96428223 13.9052667 2.02120394 13.9661271 2.09902836 14 2.17981103 14 2.18419963 14 2.18855572 14 2.19346444 13.9997232L3.17078843 13.9536713 3.17130856 13.9536713 3.76679222 13.9254728 4.03719472 13.9128094C4.33636691 13.8985544 4.62052035 13.7654503 4.8326358 13.5399656L12.6637758 5.20526778 12.8102574 5.36113833C12.9562188 5.5164207 13.1474316 5.59409648 13.3385793 5.59409648 13.5297595 5.59409648 13.7210048 5.5164207 13.8669337 5.36113833 14.1588566 5.0506774 14.1588566 4.54687471 13.8669337 4.23648298L14.4103394 3.65804925C15.1965481 2.82133058 15.1965481 1.46468586 14.4103719.627690393zM8.75529259 7.86544704L6.00510601 8.41765438 10.4911609 3.64279089 11.6072296 4.83010586 8.75529259 7.86544704zM2.34400439 14C1.04964153 14 0 14.4475932 0 15.0001713 0 15.5524558 1.04964153 16 2.34400439 16 3.63836725 16 4.6875 15.5525047 4.6875 15.0001713 4.6875 14.4475442 3.63836725 14 2.34400439 14z"
+                            />
+                          </svg>
+                        </span>
+
+                        <input
+                          type="hidden"
+                          name="arsenicColors"
+                          id="dark-color"
+                          class="color-preview-input"
+                          value=""
+                        />
+                        <input
+                          type="hidden"
+                          name="isColorReverted"
+                          id="dark-color-revert"
+                          value="false"
+                        />
+                      </span>
+                    </li>
+
+                    <li class="color-shades-list-item">
+                      <span class="color-shades-checkbox">
+                        <label for="select-light" class="sr-only"
+                          >select color</label
+                        >
+                        <input
+                          type="checkbox"
+                          name="select-color-checkbox"
+                          id="light-checkbox"
+                        />
+                      </span>
+                      <span
+                        class="color-preview-block"
+                        id="light-color-preview"
+                      >
+                        <span
+                          class="color-preview-title"
+                          id="light-preview-title"
+                          >light</span
+                        ><span
+                          title="Revert Edited Color"
+                          class="material-icons color-revert-icon"
+                          id="light-revert"
+                          style="display: none"
+                        >
+                          replay
+                        </span>
+                        <span
+                          class="color-picker-icon"
+                          id="light-icon"
+                          style="display: none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            id="light-color-picker-icon"
+                            class="icon"
+                          >
+                            <path
+                              fill="currentcolor"
+                              d="M14.4103719.627690393C13.6242281-.20906288 12.3495849-.209305076 11.562921.627413597L11.0194828 1.20581272C10.72756.895144197 10.2547294.895144197 9.96283905 1.20581272 9.67088366 1.51623905 9.67088366 2.02004175 9.96283905 2.33046808L10.138903 2.51796254 4.26832743 8.7666591 4.2678073 8.7666591 2.23003607 10.9357337C2.06808064 11.1081082 1.9726043 11.338679 1.96233174 11.5821899L1.95745552 11.6978905C1.95745552 11.6984441 1.95745552 11.6989285 1.95745552 11.6994821L1.8752425 13.6614097C1.87186165 13.7525101 1.90394716 13.8408079 1.96428223 13.9052667 2.02120394 13.9661271 2.09902836 14 2.17981103 14 2.18419963 14 2.18855572 14 2.19346444 13.9997232L3.17078843 13.9536713 3.17130856 13.9536713 3.76679222 13.9254728 4.03719472 13.9128094C4.33636691 13.8985544 4.62052035 13.7654503 4.8326358 13.5399656L12.6637758 5.20526778 12.8102574 5.36113833C12.9562188 5.5164207 13.1474316 5.59409648 13.3385793 5.59409648 13.5297595 5.59409648 13.7210048 5.5164207 13.8669337 5.36113833 14.1588566 5.0506774 14.1588566 4.54687471 13.8669337 4.23648298L14.4103394 3.65804925C15.1965481 2.82133058 15.1965481 1.46468586 14.4103719.627690393zM8.75529259 7.86544704L6.00510601 8.41765438 10.4911609 3.64279089 11.6072296 4.83010586 8.75529259 7.86544704zM2.34400439 14C1.04964153 14 0 14.4475932 0 15.0001713 0 15.5524558 1.04964153 16 2.34400439 16 3.63836725 16 4.6875 15.5525047 4.6875 15.0001713 4.6875 14.4475442 3.63836725 14 2.34400439 14z"
+                            />
+                          </svg>
+                        </span>
+                        <input
+                          type="hidden"
+                          name="arsenicColors"
+                          id="light-color"
+                          class="color-preview-input"
+                          value=""
+                        />
+                        <input
+                          type="hidden"
+                          name="isColorReverted"
+                          id="light-color-revert"
+                          value="false"
+                        />
+                      </span>
+                    </li>
+
+                    <li class="color-shades-list-item">
+                      <span class="color-shades-checkbox">
+                        <label for="select-gray" class="sr-only"
+                          >select color</label
+                        >
+                        <input
+                          type="checkbox"
+                          name="select-color-checkbox"
+                          id="gray-checkbox"
+                        />
+                      </span>
+                      <span class="color-preview-block" id="gray-color-preview">
+                        <span
+                          class="color-preview-title"
+                          id="gray-preview-title"
+                          >gray</span
+                        ><span
+                          title="Revert Edited Color"
+                          class="material-icons color-revert-icon"
+                          id="gray-revert"
+                          style="display: none"
+                        >
+                          replay
+                        </span>
+                        <span
+                          class="color-picker-icon"
+                          id="gray-icon"
+                          style="display: none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            id="gray-color-picker-icon"
+                            class="icon"
+                          >
+                            <path
+                              fill="currentcolor"
+                              d="M14.4103719.627690393C13.6242281-.20906288 12.3495849-.209305076 11.562921.627413597L11.0194828 1.20581272C10.72756.895144197 10.2547294.895144197 9.96283905 1.20581272 9.67088366 1.51623905 9.67088366 2.02004175 9.96283905 2.33046808L10.138903 2.51796254 4.26832743 8.7666591 4.2678073 8.7666591 2.23003607 10.9357337C2.06808064 11.1081082 1.9726043 11.338679 1.96233174 11.5821899L1.95745552 11.6978905C1.95745552 11.6984441 1.95745552 11.6989285 1.95745552 11.6994821L1.8752425 13.6614097C1.87186165 13.7525101 1.90394716 13.8408079 1.96428223 13.9052667 2.02120394 13.9661271 2.09902836 14 2.17981103 14 2.18419963 14 2.18855572 14 2.19346444 13.9997232L3.17078843 13.9536713 3.17130856 13.9536713 3.76679222 13.9254728 4.03719472 13.9128094C4.33636691 13.8985544 4.62052035 13.7654503 4.8326358 13.5399656L12.6637758 5.20526778 12.8102574 5.36113833C12.9562188 5.5164207 13.1474316 5.59409648 13.3385793 5.59409648 13.5297595 5.59409648 13.7210048 5.5164207 13.8669337 5.36113833 14.1588566 5.0506774 14.1588566 4.54687471 13.8669337 4.23648298L14.4103394 3.65804925C15.1965481 2.82133058 15.1965481 1.46468586 14.4103719.627690393zM8.75529259 7.86544704L6.00510601 8.41765438 10.4911609 3.64279089 11.6072296 4.83010586 8.75529259 7.86544704zM2.34400439 14C1.04964153 14 0 14.4475932 0 15.0001713 0 15.5524558 1.04964153 16 2.34400439 16 3.63836725 16 4.6875 15.5525047 4.6875 15.0001713 4.6875 14.4475442 3.63836725 14 2.34400439 14z"
+                            />
+                          </svg>
+                        </span>
+                        <input
+                          type="hidden"
+                          name="arsenicColors"
+                          id="gray-color"
+                          class="color-preview-input"
+                          value=""
+                        />
+                        <input
+                          type="hidden"
+                          name="isColorReverted"
+                          id="gray-color-revert"
+                          value="false"
+                        />
+                      </span>
+                    </li>
+
+                    <li class="color-shades-list-item">
+                      <span class="color-shades-checkbox">
+                        <label for="select-success" class="sr-only"
+                          >select color</label
+                        >
+                        <input
+                          type="checkbox"
+                          name="select-color-checkbox"
+                          id="success-checkbox"
+                        />
+                      </span>
+                      <span
+                        class="color-preview-block"
+                        id="success-color-preview"
+                      >
+                        <span
+                          class="color-preview-title"
+                          id="success-preview-title"
+                          >success</span
+                        ><span
+                          title="Revert Edited Color"
+                          class="material-icons color-revert-icon"
+                          id="success-revert"
+                          style="display: none"
+                        >
+                          replay
+                        </span>
+                        <span
+                          class="color-picker-icon"
+                          id="success-icon"
+                          style="display: none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            id="success-color-picker-icon"
+                            class="icon"
+                          >
+                            <path
+                              fill="currentcolor"
+                              d="M14.4103719.627690393C13.6242281-.20906288 12.3495849-.209305076 11.562921.627413597L11.0194828 1.20581272C10.72756.895144197 10.2547294.895144197 9.96283905 1.20581272 9.67088366 1.51623905 9.67088366 2.02004175 9.96283905 2.33046808L10.138903 2.51796254 4.26832743 8.7666591 4.2678073 8.7666591 2.23003607 10.9357337C2.06808064 11.1081082 1.9726043 11.338679 1.96233174 11.5821899L1.95745552 11.6978905C1.95745552 11.6984441 1.95745552 11.6989285 1.95745552 11.6994821L1.8752425 13.6614097C1.87186165 13.7525101 1.90394716 13.8408079 1.96428223 13.9052667 2.02120394 13.9661271 2.09902836 14 2.17981103 14 2.18419963 14 2.18855572 14 2.19346444 13.9997232L3.17078843 13.9536713 3.17130856 13.9536713 3.76679222 13.9254728 4.03719472 13.9128094C4.33636691 13.8985544 4.62052035 13.7654503 4.8326358 13.5399656L12.6637758 5.20526778 12.8102574 5.36113833C12.9562188 5.5164207 13.1474316 5.59409648 13.3385793 5.59409648 13.5297595 5.59409648 13.7210048 5.5164207 13.8669337 5.36113833 14.1588566 5.0506774 14.1588566 4.54687471 13.8669337 4.23648298L14.4103394 3.65804925C15.1965481 2.82133058 15.1965481 1.46468586 14.4103719.627690393zM8.75529259 7.86544704L6.00510601 8.41765438 10.4911609 3.64279089 11.6072296 4.83010586 8.75529259 7.86544704zM2.34400439 14C1.04964153 14 0 14.4475932 0 15.0001713 0 15.5524558 1.04964153 16 2.34400439 16 3.63836725 16 4.6875 15.5525047 4.6875 15.0001713 4.6875 14.4475442 3.63836725 14 2.34400439 14z"
+                            />
+                          </svg>
+                        </span>
+                        <input
+                          type="hidden"
+                          name="arsenicColors"
+                          id="success-color"
+                          class="color-preview-input"
+                          value=""
+                        />
+                        <input
+                          type="hidden"
+                          name="isColorReverted"
+                          id="success-color-revert"
+                          value="false"
+                        />
+                      </span>
+                    </li>
+
+                    <li class="color-shades-list-item">
+                      <span class="color-shades-checkbox">
+                        <label for="select-danger" class="sr-only"
+                          >select color</label
+                        >
+                        <input
+                          type="checkbox"
+                          name="select-color-checkbox"
+                          id="danger-checkbox"
+                        />
+                      </span>
+                      <span
+                        class="color-preview-block"
+                        id="danger-color-preview"
+                      >
+                        <span
+                          class="color-preview-title"
+                          id="danger-preview-title"
+                          >danger</span
+                        ><span
+                          title="Revert Edited Color"
+                          class="material-icons color-revert-icon"
+                          id="danger-revert"
+                          style="display: none"
+                        >
+                          replay
+                        </span>
+                        <span
+                          class="color-picker-icon"
+                          id="danger-icon"
+                          style="display: none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            id="danger-color-picker-icon"
+                            class="icon"
+                          >
+                            <path
+                              fill="currentcolor"
+                              d="M14.4103719.627690393C13.6242281-.20906288 12.3495849-.209305076 11.562921.627413597L11.0194828 1.20581272C10.72756.895144197 10.2547294.895144197 9.96283905 1.20581272 9.67088366 1.51623905 9.67088366 2.02004175 9.96283905 2.33046808L10.138903 2.51796254 4.26832743 8.7666591 4.2678073 8.7666591 2.23003607 10.9357337C2.06808064 11.1081082 1.9726043 11.338679 1.96233174 11.5821899L1.95745552 11.6978905C1.95745552 11.6984441 1.95745552 11.6989285 1.95745552 11.6994821L1.8752425 13.6614097C1.87186165 13.7525101 1.90394716 13.8408079 1.96428223 13.9052667 2.02120394 13.9661271 2.09902836 14 2.17981103 14 2.18419963 14 2.18855572 14 2.19346444 13.9997232L3.17078843 13.9536713 3.17130856 13.9536713 3.76679222 13.9254728 4.03719472 13.9128094C4.33636691 13.8985544 4.62052035 13.7654503 4.8326358 13.5399656L12.6637758 5.20526778 12.8102574 5.36113833C12.9562188 5.5164207 13.1474316 5.59409648 13.3385793 5.59409648 13.5297595 5.59409648 13.7210048 5.5164207 13.8669337 5.36113833 14.1588566 5.0506774 14.1588566 4.54687471 13.8669337 4.23648298L14.4103394 3.65804925C15.1965481 2.82133058 15.1965481 1.46468586 14.4103719.627690393zM8.75529259 7.86544704L6.00510601 8.41765438 10.4911609 3.64279089 11.6072296 4.83010586 8.75529259 7.86544704zM2.34400439 14C1.04964153 14 0 14.4475932 0 15.0001713 0 15.5524558 1.04964153 16 2.34400439 16 3.63836725 16 4.6875 15.5525047 4.6875 15.0001713 4.6875 14.4475442 3.63836725 14 2.34400439 14z"
+                            />
+                          </svg>
+                        </span>
+                        <input
+                          type="hidden"
+                          name="arsenicColors"
+                          id="danger-color"
+                          class="color-preview-input"
+                          value=""
+                        />
+                        <input
+                          type="hidden"
+                          name="isColorReverted"
+                          id="danger-color-revert"
+                          value="false"
+                        />
+                      </span>
+                    </li>
+
+                    <li class="color-shades-list-item">
+                      <span class="color-shades-checkbox">
+                        <label for="select-warning" class="sr-only"
+                          >select color</label
+                        >
+                        <input
+                          type="checkbox"
+                          name="select-color-checkbox"
+                          id="warning-checkbox"
+                        />
+                      </span>
+                      <span
+                        class="color-preview-block"
+                        id="warning-color-preview"
+                      >
+                        <span
+                          class="color-preview-title"
+                          id="warning-preview-title"
+                          >warning</span
+                        ><span
+                          title="Revert Edited Color"
+                          class="material-icons color-revert-icon"
+                          id="warning-revert"
+                          style="display: none"
+                        >
+                          replay
+                        </span>
+                        <span
+                          class="color-picker-icon"
+                          id="warning-icon"
+                          style="display: none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            id="warning-color-picker-icon"
+                            class="icon"
+                          >
+                            <path
+                              fill="currentcolor"
+                              d="M14.4103719.627690393C13.6242281-.20906288 12.3495849-.209305076 11.562921.627413597L11.0194828 1.20581272C10.72756.895144197 10.2547294.895144197 9.96283905 1.20581272 9.67088366 1.51623905 9.67088366 2.02004175 9.96283905 2.33046808L10.138903 2.51796254 4.26832743 8.7666591 4.2678073 8.7666591 2.23003607 10.9357337C2.06808064 11.1081082 1.9726043 11.338679 1.96233174 11.5821899L1.95745552 11.6978905C1.95745552 11.6984441 1.95745552 11.6989285 1.95745552 11.6994821L1.8752425 13.6614097C1.87186165 13.7525101 1.90394716 13.8408079 1.96428223 13.9052667 2.02120394 13.9661271 2.09902836 14 2.17981103 14 2.18419963 14 2.18855572 14 2.19346444 13.9997232L3.17078843 13.9536713 3.17130856 13.9536713 3.76679222 13.9254728 4.03719472 13.9128094C4.33636691 13.8985544 4.62052035 13.7654503 4.8326358 13.5399656L12.6637758 5.20526778 12.8102574 5.36113833C12.9562188 5.5164207 13.1474316 5.59409648 13.3385793 5.59409648 13.5297595 5.59409648 13.7210048 5.5164207 13.8669337 5.36113833 14.1588566 5.0506774 14.1588566 4.54687471 13.8669337 4.23648298L14.4103394 3.65804925C15.1965481 2.82133058 15.1965481 1.46468586 14.4103719.627690393zM8.75529259 7.86544704L6.00510601 8.41765438 10.4911609 3.64279089 11.6072296 4.83010586 8.75529259 7.86544704zM2.34400439 14C1.04964153 14 0 14.4475932 0 15.0001713 0 15.5524558 1.04964153 16 2.34400439 16 3.63836725 16 4.6875 15.5525047 4.6875 15.0001713 4.6875 14.4475442 3.63836725 14 2.34400439 14z"
+                            />
+                          </svg>
+                        </span>
+                        <!-- <label
+                              for="warning-color"
+                              class="color-preview-label"
+                            > -->
+                        <input
+                          type="hidden"
+                          name="arsenicColors"
+                          id="warning-color"
+                          class="color-preview-input"
+                          value=""
+                        />
+                        <input
+                          type="hidden"
+                          name="isColorReverted"
+                          id="warning-color-revert"
+                          value="false"
+                        />
+                        <!-- </label> -->
+                      </span>
+                    </li>
+
+                    <li class="color-shades-list-item">
+                      <span class="color-shades-checkbox">
+                        <label for="select-info" class="sr-only"
+                          >select color</label
+                        >
+                        <input
+                          type="checkbox"
+                          name="select-color-checkbox"
+                          id="info-checkbox"
+                        />
+                      </span>
+                      <span class="color-preview-block" id="info-color-preview">
+                        <span
+                          class="color-preview-title"
+                          id="info-preview-title"
+                          >info</span
+                        ><span
+                          title="Revert Edited Color"
+                          class="material-icons color-revert-icon"
+                          id="info-revert"
+                          style="display: none"
+                        >
+                          replay
+                        </span>
+                        <span
+                          class="color-picker-icon"
+                          id="info-icon"
+                          style="display: none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            id="info-color-picker-icon"
+                            class="icon"
+                          >
+                            <path
+                              fill="currentcolor"
+                              d="M14.4103719.627690393C13.6242281-.20906288 12.3495849-.209305076 11.562921.627413597L11.0194828 1.20581272C10.72756.895144197 10.2547294.895144197 9.96283905 1.20581272 9.67088366 1.51623905 9.67088366 2.02004175 9.96283905 2.33046808L10.138903 2.51796254 4.26832743 8.7666591 4.2678073 8.7666591 2.23003607 10.9357337C2.06808064 11.1081082 1.9726043 11.338679 1.96233174 11.5821899L1.95745552 11.6978905C1.95745552 11.6984441 1.95745552 11.6989285 1.95745552 11.6994821L1.8752425 13.6614097C1.87186165 13.7525101 1.90394716 13.8408079 1.96428223 13.9052667 2.02120394 13.9661271 2.09902836 14 2.17981103 14 2.18419963 14 2.18855572 14 2.19346444 13.9997232L3.17078843 13.9536713 3.17130856 13.9536713 3.76679222 13.9254728 4.03719472 13.9128094C4.33636691 13.8985544 4.62052035 13.7654503 4.8326358 13.5399656L12.6637758 5.20526778 12.8102574 5.36113833C12.9562188 5.5164207 13.1474316 5.59409648 13.3385793 5.59409648 13.5297595 5.59409648 13.7210048 5.5164207 13.8669337 5.36113833 14.1588566 5.0506774 14.1588566 4.54687471 13.8669337 4.23648298L14.4103394 3.65804925C15.1965481 2.82133058 15.1965481 1.46468586 14.4103719.627690393zM8.75529259 7.86544704L6.00510601 8.41765438 10.4911609 3.64279089 11.6072296 4.83010586 8.75529259 7.86544704zM2.34400439 14C1.04964153 14 0 14.4475932 0 15.0001713 0 15.5524558 1.04964153 16 2.34400439 16 3.63836725 16 4.6875 15.5525047 4.6875 15.0001713 4.6875 14.4475442 3.63836725 14 2.34400439 14z"
+                            />
+                          </svg>
+                        </span>
+                        <!-- <label for="info-color" class="color-preview-label"> -->
+                        <input
+                          type="hidden"
+                          name="arsenicColors"
+                          id="info-color"
+                          class="color-preview-input"
+                          value=""
+                        />
+                        <input
+                          type="hidden"
+                          name="isColorReverted"
+                          id="info-color-revert"
+                          value="false"
+                        />
+                        <!-- </label> -->
+                      </span>
+                    </li>
+
+                    <li class="color-shades-list-item">
+                      <span class="color-shades-checkbox">
+                        <label for="select-white" class="sr-only"
+                          >select color</label
+                        >
+                        <input
+                          type="checkbox"
+                          name="select-color-checkbox"
+                          id="white-checkbox"
+                        />
+                      </span>
+                      <span
+                        class="color-preview-block"
+                        id="white-color-preview"
+                        style="
+                          background-color: #ffffff;
+                          border: 1px solid black;
+                        "
+                      >
+                        <span
+                          class="color-preview-title"
+                          id="white-preview-title"
+                          style="color: #000000"
+                          >white</span
+                        ><span
+                          title="Revert Edited Color"
+                          class="material-icons color-revert-icon"
+                          id="white-revert"
+                          style="display: none"
+                        >
+                          replay
+                        </span>
+                        <span
+                          class="color-picker-icon"
+                          id="white-icon"
+                          style="display: none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            id="white-color-picker-icon"
+                            class="icon"
+                          >
+                            <path
+                              fill="currentcolor"
+                              d="M14.4103719.627690393C13.6242281-.20906288 12.3495849-.209305076 11.562921.627413597L11.0194828 1.20581272C10.72756.895144197 10.2547294.895144197 9.96283905 1.20581272 9.67088366 1.51623905 9.67088366 2.02004175 9.96283905 2.33046808L10.138903 2.51796254 4.26832743 8.7666591 4.2678073 8.7666591 2.23003607 10.9357337C2.06808064 11.1081082 1.9726043 11.338679 1.96233174 11.5821899L1.95745552 11.6978905C1.95745552 11.6984441 1.95745552 11.6989285 1.95745552 11.6994821L1.8752425 13.6614097C1.87186165 13.7525101 1.90394716 13.8408079 1.96428223 13.9052667 2.02120394 13.9661271 2.09902836 14 2.17981103 14 2.18419963 14 2.18855572 14 2.19346444 13.9997232L3.17078843 13.9536713 3.17130856 13.9536713 3.76679222 13.9254728 4.03719472 13.9128094C4.33636691 13.8985544 4.62052035 13.7654503 4.8326358 13.5399656L12.6637758 5.20526778 12.8102574 5.36113833C12.9562188 5.5164207 13.1474316 5.59409648 13.3385793 5.59409648 13.5297595 5.59409648 13.7210048 5.5164207 13.8669337 5.36113833 14.1588566 5.0506774 14.1588566 4.54687471 13.8669337 4.23648298L14.4103394 3.65804925C15.1965481 2.82133058 15.1965481 1.46468586 14.4103719.627690393zM8.75529259 7.86544704L6.00510601 8.41765438 10.4911609 3.64279089 11.6072296 4.83010586 8.75529259 7.86544704zM2.34400439 14C1.04964153 14 0 14.4475932 0 15.0001713 0 15.5524558 1.04964153 16 2.34400439 16 3.63836725 16 4.6875 15.5525047 4.6875 15.0001713 4.6875 14.4475442 3.63836725 14 2.34400439 14z"
+                            />
+                          </svg>
+                        </span>
+                        <!-- <label for="white-color" class="color-preview-label"> -->
+                        <input
+                          type="hidden"
+                          name="arsenicColors"
+                          id="white-color"
+                          class="color-preview-input"
+                          value=""
+                        />
+                        <input
+                          type="hidden"
+                          name="isColorReverted"
+                          id="white-color-revert"
+                          value="false"
+                        />
+                        <!-- </label> -->
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6">
+                <form action="" class="select-stylesheet">
+                  <label for="stylesheets" class="text mb-2"
+                    >Apply Changes to</label
+                  >
+                  <select name="select-stylesheets" id="select-stylesheets">
+                    <!-- <option value="ArsenicBase">ArsenicBase.sketch</option> -->
+                    <!-- <option value="ProjectBase">ProjectBase.sketch</option> -->
+                  </select>
+                </form>
+
+                <div class="select-base-color-block">
+                  <label for="select-base-color" class="sr-only"
+                    >select base color</label
+                  >
+                  <input
+                    type="color"
+                    name="select-base-color"
+                    id="select-base-color"
+                  />
+                  <input
+                    type="hidden"
+                    name="which-color"
+                    id="which-color"
+                    value=""
+                  />
+                </div>
+
+                <div class="color-code-advanced">
+                  <div class="input-group input-group-sm">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-sm"
+                        >#</span
+                      >
+                    </div>
+                    <input
+                      type="text"
+                      name="selected-color-hex"
+                      id="selected-color-hex"
+                      class="form-control"
+                      aria-label="Small"
+                      aria-describedby="inputGroup-sizing-sm"
+                      value=""
+                    />
+                  </div>
+
+                  <div class="advanced-option-checkbox">
+                    <label for="advanced-option" class="mb-0">
+                      <input
+                        type="checkbox"
+                        name="select-color"
+                        id="advanced-option"
+                      />
+                      Advanced
+                    </label>
+                  </div>
+                </div>
+
+                <p class="Whenyouchooseaco mt-3">
+                  When you choose a color, the plugin automatically generates
+                  <strong>4 additional</strong> light and dark shades each.
+                </p>
+
+                <div class="advanced-options-block">
+                  <p class="Generate4lightera mt-3">
+                    Generate 4 lighter and 4 darker shades by setting Luminence
+                    value.
+                  </p>
+
+                  <!-- ion range slider -->
+                  <input
+                    type="text"
+                    class="js-range-slider mt-3"
+                    name="my_range"
+                  />
+                  <input
+                    name="minLuminence"
+                    id="minLuminence"
+                    type="hidden"
+                    value="20"
+                    min="10"
+                    max="90"
+                  />
+                  <input
+                    name="maxLuminence"
+                    id="maxLuminence"
+                    type="hidden"
+                    value="80"
+                    min="10"
+                    max="90"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <div class="text-center mt-2">
+                  <button
+                    class="btn btn-primary"
+                    id="updateColors"
+                    name="updateColors"
+                  >
+                    Apply
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Typeface Tab -->
+        <div
+          class="tab-pane typeface-tab"
+          id="typeface"
+          role="tabpanel"
+          aria-labelledby="typeface-tab"
+        >
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-4">
+                <div class="font-family-selection">
+                  <ul class="fontfamily-list" id="font-listing"></ul>
+                </div>
+                <p class="NoteTypefacingnot mt-3 mb-0">
+                  Note:<br />
+                  Typefacing not having Bold variant shall result in both bold
+                  and light text styles use same weight.
+                </p>
+              </div>
+
+              <div class="col-8">
+                <p class="SelectAllNone d-flex justify-content-between mx-2">
+                  <label for="select-all-typography" class="text mb-0">
+                    <input
+                      type="checkbox"
+                      name="select-all-typography"
+                      id="select-all-typography"
+                      class="mr-2"
+                    />
+                    Select All</label
+                  >
+                </p>
+                <div class="typeface-selection">
+                  <ul class="typeface-list">
+                    <li class="typeface-list-item">
+                      <label for="heading-1" class="heading-1">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="01-H1"
+                        />
+                        Heading 1
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="heading-2" class="heading-2">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="02-H2"
+                        />
+                        Heading 2
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="heading-3" class="heading-3">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="03-H3"
+                        />
+                        Heading 3
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="heading-4" class="heading-4">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="04-H4"
+                        />
+                        Heading 4
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="heading-5" class="heading-5">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="05-H5"
+                        />
+                        Heading 5
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="heading-6" class="heading-6">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="06-H6"
+                        />
+                        Heading 6
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="subtitle" class="subtitle">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="07-Subtitle"
+                        />
+                        subtitle
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="text-body" class="text-body">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="08-Body"
+                        />
+                        text body
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="callout" class="callout">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="09-Callout"
+                        />
+                        callout
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="subhead" class="subhead">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="10-Subhead"
+                        />
+                        subhead
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="footnote" class="footnote">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="11-Footnote"
+                        />
+                        footnote
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="caption" class="caption">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="12-Caption"
+                        />
+                        caption
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="label" class="label">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="13-Label"
+                        />
+                        label
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="small" class="small">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="14-Small"
+                        />
+                        small
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="text-center mt-2">
+                  <!-- <label for="update-all" class="update-all mb-0">
+                        <input
+                          type="checkbox"
+                          name="select-color"
+                          id="update-all"
+                        />
+                        Update ALL styles for selected sizes
+                      </label> -->
+                  <button
+                    class="btn btn-primary"
+                    id="updateFonts"
+                    name="updateFonts"
+                  >
+                    Apply
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+    <!-- </div> -->
+
+    <footer>
+      <p
+        class="d-flex justify-content-end align-items-center px-3 mb-0 text-secondary"
+        style="font-size: 11px"
+      >
+        ©
+        <a
+          class="text-dark mx-1"
+          id="openCohort"
+          href="https://www.cohort.work/"
+          target="_blank"
+          >cohort.work</a
+        >
+        2021
+      </p>
+    </footer>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- ion range slider -->
+    <script src="../js/ion.rangeSlider.js"></script>
+    <!-- notice the "../resources_" here. It's because webview.js will be compiled in a different folder with the prefix. -->
+    <!-- <script src="../js/codemirror-colorpicker.min.js"></script> -->
+    <script src="../resources_colors.js"></script>
+    <script src="../resources_fonts.js"></script>
+  </body>
+</html>

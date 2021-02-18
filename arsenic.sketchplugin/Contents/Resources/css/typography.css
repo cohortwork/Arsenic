@@ -1,0 +1,69 @@
+.heading-1 {
+  font-size: 5rem;
+  letter-spacing: -1.76px;
+  line-height: 102px; }
+
+.heading-2 {
+  font-size: 2.5rem;
+  letter-spacing: -0.88px;
+  line-height: 56px; }
+
+.heading-3 {
+  font-size: 2rem;
+  letter-spacing: -0.7px;
+  line-height: 44px; }
+
+.heading-4 {
+  font-size: 1.5rem;
+  letter-spacing: -0.45px;
+  line-height: 32px; }
+
+.heading-5 {
+  font-size: 1.375rem;
+  letter-spacing: -0.4px;
+  line-height: 30px; }
+
+.heading-6 {
+  font-size: 1.25rem;
+  letter-spacing: -0.34px;
+  line-height: 28px; }
+
+.subtitle {
+  font-size: 1.125rem;
+  letter-spacing: -0.25px;
+  line-height: 24px; }
+
+.text-body {
+  font-size: 1.0625rem;
+  letter-spacing: -0.22px;
+  line-height: 24px; }
+
+.callout {
+  font-size: 1rem;
+  letter-spacing: -0.25px;
+  line-height: 22px; }
+
+.subhead {
+  font-size: 0.9375rem;
+  letter-spacing: -0.12px;
+  line-height: 22px; }
+
+.footnote {
+  font-size: 0.8125rem;
+  letter-spacing: -0.03px;
+  line-height: 18px; }
+
+.caption {
+  font-size: 0.75rem;
+  letter-spacing: auto;
+  line-height: 18px; }
+
+.label {
+  font-size: 0.6875rem;
+  letter-spacing: 0.1px;
+  line-height: 16px; }
+
+.small {
+  font-size: 0.625rem;
+  letter-spacing: 0.1px;
+  line-height: 14px; }
