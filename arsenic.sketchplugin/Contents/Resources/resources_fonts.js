@@ -93,7 +93,8 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// Font Related Js
+var fontList = []; // Font Related Js
+
 document.getElementById("font-listing").addEventListener("click", function (e) {
   var target = e.target;
   if (target.tagName != "LI") return;
@@ -127,12 +128,8 @@ document.getElementById("updateFonts").addEventListener("click", function () {
 
 window.setInitialFonts = function (fontsName) {
   var cont = document.getElementById("font-listing");
-  var li = document.createElement("li"); // create li element.
-
-  li.className = "fontfamily-list-item";
-  li.innerHTML = fontsName; // assigning text to li using array value.
-
-  cont.appendChild(li); // append li to ul.
+  createFontOption(fontsName, cont);
+  fontList.push(fontsName);
 };
 
 var fetchSelectedFonts = function fetchSelectedFonts() {
@@ -151,6 +148,42 @@ var fetchSelectedFonts = function fetchSelectedFonts() {
 
     window.postMessage("setMessage", "fonts");
   }
+};
+
+document.getElementById("search-system-font").oninput = ("change", function (e) {
+  var value = e.target.value; // Prevent white space
+
+  if (value.trim().length > 0) {
+    // Filter fonts from local array based on search value
+    var filteredFonts = fontList === null || fontList === void 0 ? void 0 : fontList.filter(function (font) {
+      return font.toLowerCase().includes(value.toLowerCase());
+    });
+    removeExistingFont();
+
+    for (var i = 0; i < filteredFonts.length; i++) {
+      createFontOption(filteredFonts[i], document.getElementById("font-listing"));
+    }
+  } else {
+    removeExistingFont();
+    window.postMessage("getFonts");
+  }
+});
+
+var removeExistingFont = function removeExistingFont() {
+  var cont = document.getElementById("font-listing");
+
+  while (cont.firstChild) {
+    cont.removeChild(cont.firstChild);
+  }
+};
+
+var createFontOption = function createFontOption(fontsName, cont) {
+  var li = document.createElement("li"); // create li element.
+
+  li.className = "fontfamily-list-item";
+  li.innerHTML = fontsName; // assigning text to li using array value.
+
+  cont.appendChild(li); // append li to ul.
 };
 
 /***/ })

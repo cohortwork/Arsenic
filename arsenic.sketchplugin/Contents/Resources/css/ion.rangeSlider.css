@@ -738,3 +738,10 @@ Build date: 2019-12-19 16:51:02
 .irs-to::before {
   content: "Max";
 }
+.irs-from,
+.irs-to {
+  visibility: visible !important;
+}
+.irs-single {
+  display: none;
+}

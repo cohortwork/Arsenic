@@ -1,93 +1,92 @@
 .ui-content {
-  padding: 0;
-  border-width: 0;
-  overflow: visible;
-  overflow-x: hidden;
+	padding: 0;
+	border-width: 0;
+	overflow: visible;
+	overflow-x: hidden;
 }
-
 .ui-rangeslider {
-  margin: 0;
-  .ui-rangeslider-sliders {
-    display: inline-block;
-    width: 100%;
-    height: 25px;
-    margin: 10px 0 0;
-    .ui-slider-track {
-      display: inline-block;
-      height: 8px;
-      &:first-child {
-        background-color: transparent;
-        background: 0;
-        height: 8px !important;
-      }
-      .ui-btn {
-        &.ui-slider-handle {
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          padding: 0;
-          margin: 0;
-          outline: 0;
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          z-index: 1;
-        }
-      }
-    }
-  }
+	margin: 0;
+	.ui-rangeslider-sliders {
+		display: inline-block;
+		width: 100%;
+		height: 25px;
+		margin: 10px 0 0;
+		.ui-slider-track {
+			display: inline-block;
+			height: 8px;
+			&:first-child {
+				background-color: transparent;
+				background: 0;
+				height: 8px !important;
+			}
+			.ui-btn {
+				&.ui-slider-handle {
+					width: 20px;
+					height: 20px;
+					border-radius: 50%;
+					padding: 0;
+					margin: 0;
+					outline: 0;
+					position: absolute;
+					top: 50%;
+					-webkit-transform: translateY(-50%);
+					-ms-transform: translateY(-50%);
+					transform: translateY(-50%);
+					z-index: 1;
+				}
+			}
+		}
+	}
 }
-
-.ui-page-theme-a .ui-btn.ui-btn-active,
 .ui-bar-a .ui-btn.ui-btn-active,
-.ui-body-a .ui-btn.ui-btn-active,
-.ui-group-theme-a .ui-btn.ui-btn-active,
-.ui-btn.ui-btn-a.ui-btn-active,
-.ui-page-theme-a .ui-checkbox-on:after,
 .ui-bar-a .ui-checkbox-on:after,
-.ui-body-a .ui-checkbox-on:after,
-.ui-group-theme-a .ui-checkbox-on:after,
-.ui-btn.ui-checkbox-on.ui-btn-a:after,
-.ui-page-theme-a .ui-flipswitch-active,
 .ui-bar-a .ui-flipswitch-active,
-.ui-body-a .ui-flipswitch-active,
-.ui-group-theme-a .ui-flipswitch-active,
-.ui-flipswitch.ui-bar-a.ui-flipswitch-active,
-.ui-page-theme-a .ui-slider-track .ui-btn-active,
 .ui-bar-a .ui-slider-track .ui-btn-active,
+.ui-body-a .ui-btn.ui-btn-active,
+.ui-body-a .ui-checkbox-on:after,
+.ui-body-a .ui-flipswitch-active,
 .ui-body-a .ui-slider-track .ui-btn-active,
+.ui-btn.ui-btn-a.ui-btn-active,
+.ui-btn.ui-checkbox-on.ui-btn-a:after,
+.ui-flipswitch.ui-bar-a.ui-flipswitch-active,
+.ui-group-theme-a .ui-btn.ui-btn-active,
+.ui-group-theme-a .ui-checkbox-on:after,
+.ui-group-theme-a .ui-flipswitch-active,
 .ui-group-theme-a .ui-slider-track .ui-btn-active,
+.ui-page-theme-a .ui-btn.ui-btn-active,
+.ui-page-theme-a .ui-checkbox-on:after,
+.ui-page-theme-a .ui-flipswitch-active,
+.ui-page-theme-a .ui-slider-track .ui-btn-active,
 .ui-slider-track.ui-body-a .ui-btn-active {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
-
-.ui-page-theme-a .ui-btn:focus,
 .ui-bar-a .ui-btn:focus,
-.ui-body-a .ui-btn:focus,
-.ui-group-theme-a .ui-btn:focus,
-.ui-btn.ui-btn-a:focus,
-.ui-page-theme-a .ui-focus,
 .ui-bar-a .ui-focus,
+.ui-body-a .ui-btn:focus,
+.ui-body-a.ui-focus,
 .ui-body-a .ui-focus,
-.ui-group-theme-a .ui-focus,
 .ui-btn-a.ui-focus,
-.ui-body-a.ui-focus {
-  box-shadow: none;
+.ui-btn.ui-btn-a:focus,
+.ui-group-theme-a .ui-btn:focus,
+.ui-group-theme-a .ui-focus,
+.ui-page-theme-a .ui-btn:focus,
+.ui-page-theme-a .ui-focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
-
-.ui-page-theme-a .ui-btn,
 .ui-bar-a .ui-btn,
-.ui-body-a .ui-btn,
-.ui-group-theme-a .ui-btn,
-.ui-btn.ui-btn-a,
-.ui-page-theme-a .ui-btn:visited,
 .ui-bar-a .ui-btn:visited,
+.ui-body-a .ui-btn,
 .ui-body-a .ui-btn:visited,
+.ui-btn.ui-btn-a,
+.ui-btn.ui-btn-a:visited,
+.ui-group-theme-a .ui-btn,
 .ui-group-theme-a .ui-btn:visited,
-.ui-btn.ui-btn-a:visited {
-  background-color: #f6f6f6 !important;
-  border-color: #ddd !important;
-  color: #333 !important;
-  text-shadow: 0 1px 0 #f3f3f3 !important;
+.ui-page-theme-a .ui-btn,
+.ui-page-theme-a .ui-btn:visited {
+	background-color: #f6f6f6 !important;
+	border-color: #ddd !important;
+	color: #333 !important;
+	text-shadow: 0 1px 0 #f3f3f3 !important;
 }

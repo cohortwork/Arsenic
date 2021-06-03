@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+    <meta name="author" content="Arsenic Design System" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <!-- <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16" /> -->
+    <title>Arsenic Design System</title>
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="7952b62b3f59c69bd2e19c1e8de7b5d7.css" />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600"
+    />
+    <!-- ion Range Slider Styelsheet -->
+    <link rel="stylesheet" href="21463cff1e72069b92bfc1cd960a0c81.css" />
+    <!-- Plugin Styelsheet -->
+    <link rel="stylesheet" href="9bf9a740cf0feebb9602590e1f0ceba3.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Begin: Body Inner Wrapper -->
+    <div class="body-inner-wrapper" id="body-inner-wrapper">
+      <div
+        class="
+          d-flex
+          justify-content-between
+          align-items-center
+          py-2
+          mx-3
+          border-bottom
+        "
+      >
+        <!-- Arsenic Logo -->
+        <figure class="brand-logo m-0">
+          <a
+            id="openArsenic"
+            href="https://cohort.work/arsenic-design-system/"
+            target="_blank"
+          >
+            <img
+              src="dbdbcb2592d7d53575f8724aca1a352f.png"
+              alt="Arsenic Logo"
+              width="42"
+              height=""
+              class="img-fluid"
+            />
+          </a>
+        </figure>
+
+        <!-- Begin: Plugin Tab Nav -->
+        <div class="plugin-tab-nav py-0">
+          <!-- Nav List -->
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <!-- Nav List Item - Typeface -->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="typeface-tab"
+                data-toggle="tab"
+                href="#typeface"
+                role="tab"
+                aria-controls="typeface"
+                aria-selected="false"
+                >Typeface</a
+              >
+            </li>
+            <!-- Nav List Item - Colors -->
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="colors-tab"
+                data-toggle="tab"
+                href="#colors"
+                role="tab"
+                aria-controls="colors"
+                aria-selected="true"
+                >Colors</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- End: Plugin Tab Nav -->
+      </div>
+      <!-- Begin: Plugin Tab Content -->
+      <div class="tab-content">
+        <!-- Begin: Colors Tab -->
+        <div
+          class="tab-pane colors-tab show active"
+          id="colors"
+          role="tabpanel"
+          aria-labelledby="colors-tab"
+        >
+          <div class="container-fluid">
+            <div class="row">
+              <!-- Colors Shades Block -->
+              <div class="col-5">
+                <div class="color-shades-block">
+                  <!-- Checkbox - Select All Color Shades -->
+                  <p
+                    class="
+                      select-all-colors
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      mb-2
+                    "
+                  >
+                    <label
+                      for="select-all-colors"
+                      class="text d-flex align-items-center m-0"
+                    >
+                      <input
+                        type="checkbox"
+                        name="select-color-checkbox"
+                        id="select-all-colors"
+                        class="mr-2"
+                      />
+                      <span class="checkbox-style"></span>
+                      Select All
+                    </label>
+                    <span class="text mb-0">Base 500 Shades</span>
+                  </p>
+                  <!-- Color Shades List -->
+                  <ul class="color-shades-list" id="color-list-ul"></ul>
+                </div>
+              </div>
+
+              <!-- Colors Shades Options Block -->
+              <div class="col-7 pl-0">
+                <div class="d-flex flex-column h-100">
+                  <!-- Select Dropdown Menu - List of Sketch Library -->
+                  <form
+                    action=""
+                    class="
+                      select-stylesheet
+                      d-flex
+                      flex-column
+                      justify-content-start
+                    "
+                  >
+                    <label for="stylesheets" class="text mb-2"
+                      >Apply Changes to</label
+                    >
+                    <select name="select-stylesheets" id="select-stylesheets">
+                      <!-- <option value="ArsenicBase">ArsenicBase.sketch</option> -->
+                    </select>
+                  </form>
+
+                  <!-- Color Picker to Change Color of Selected Color from the Colors Shaded List -->
+                  <div class="select-base-color-block mb-2">
+                    <label for="select-base-color" class="sr-only"
+                      >select base color</label
+                    >
+                    <input
+                      type="color"
+                      name="select-base-color"
+                      id="select-base-color"
+                    />
+                    <input
+                      type="hidden"
+                      name="which-color"
+                      id="which-color"
+                      value=""
+                    />
+                    <p class="pick-color-block">
+                      <span class="material-icons mr-2">palette</span>
+                      Pick Color
+                    </p>
+                  </div>
+
+                  <!-- Color Shaded Advance Options -->
+                  <div class="color-code-advanced">
+                    <!-- Input - Color Code Preview of Picked Color -->
+                    <div class="input-group input-group-sm">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm"
+                          >#</span
+                        >
+                      </div>
+                      <input
+                        type="text"
+                        name="selected-color-hex"
+                        id="selected-color-hex"
+                        class="form-control"
+                        aria-label="Small"
+                        aria-describedby="inputGroup-sizing-sm"
+                        value=""
+                      />
+                    </div>
+
+                    <!-- Checkbox - Show/Hide Range Slider to Generate 4 lighter and 4 darker shades by setting Luminence value -->
+                    <div
+                      class="advanced-option-checkbox d-flex align-items-center"
+                    >
+                      <label
+                        for="advanced-option"
+                        class="d-flex align-items-center mb-0"
+                      >
+                        <input
+                          type="checkbox"
+                          name="select-color"
+                          id="advanced-option"
+                          class="mr-2"
+                        />
+                        <span class="checkbox-style"></span>
+                        Advanced
+                      </label>
+                    </div>
+                  </div>
+
+                  <p class="select-color-shades mt-3">
+                    When you choose a color, the plugin automatically generates
+                    <strong>4 additional</strong> light and dark shades each.
+                  </p>
+
+                  <div class="advanced-options-block">
+                    <p class="Generate4lightera mt-3">
+                      Generate 4 lighter and 4 darker shades by setting
+                      Luminence value.
+                    </p>
+                    <!-- ion range slider -->
+                    <!-- Select Min & Max Luminence value to Generate 4 lighter and 4 darker shades -->
+                    <input
+                      type="text"
+                      class="js-range-slider mt-3"
+                      name="my_range"
+                    />
+                    <input
+                      name="minLuminence"
+                      id="minLuminence"
+                      type="hidden"
+                      value="20"
+                      min="10"
+                      max="90"
+                    />
+                    <input
+                      name="maxLuminence"
+                      id="maxLuminence"
+                      type="hidden"
+                      value="80"
+                      min="10"
+                      max="90"
+                    />
+                  </div>
+                  <!-- Button - Apply Changes for Colors -->
+                  <div class="mt-auto">
+                    <button
+                      class="btn btn-primary btn-block"
+                      id="updateColors"
+                      name="updateColors"
+                    >
+                      Update Colors Styles
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End: Colors Tab -->
+
+        <!-- Begin: Typeface Tab -->
+        <div
+          class="tab-pane typeface-tab"
+          id="typeface"
+          role="tabpanel"
+          aria-labelledby="typeface-tab"
+        >
+          <div class="container-fluid">
+            <div class="row">
+              <!-- Font-Family Selection Block -->
+              <div class="col-5">
+                <!-- Search Input - System Fonts -->
+                <input
+                  type="text"
+                  name="search-system-font"
+                  id="search-system-font"
+                  class="form-control py-1 mb-2"
+                  placeholder="Search System Font"
+                />
+                <!-- Font-Family Listing Block -->
+                <div class="font-family-selection">
+                  <!-- FontFamily List -->
+                  <ul class="fontfamily-list" id="font-listing"></ul>
+                </div>
+                <p class="NoteTypefacingnot mt-3 mb-0">
+                  Note:<br />
+                  Typefacing not having Bold variant shall result in both bold
+                  and light text styles use same weight.
+                </p>
+              </div>
+
+              <!-- Typography Selection Block -->
+              <div class="col-7 pl-0">
+                <!-- Checkbox - Select All Typography -->
+                <p
+                  class="SelectAllNone d-flex justify-content-between ml-2 my-2"
+                >
+                  <label for="select-all-typography">
+                    <input
+                      type="checkbox"
+                      name="select-all-typography"
+                      id="select-all-typography"
+                      class="mr-2"
+                    />
+                    <span class="checkbox-style"></span>
+                    Select All
+                  </label>
+                </p>
+
+                <!-- Typography Selection Block -->
+                <div class="typeface-selection">
+                  <!-- Typography Listing Block -->
+                  <ul class="typeface-list">
+                    <!-- Typography Listing Item -->
+                    <li class="typeface-list-item">
+                      <label for="01-H1" class="heading-1">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="01-H1"
+                        />
+                        <span class="checkbox-style mr-1"></span>
+                        Heading 1
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="02-H2" class="heading-2">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="02-H2"
+                        />
+                        <span class="checkbox-style mr-1"></span>
+                        Heading 2
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="03-H3" class="heading-3">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="03-H3"
+                        />
+                        <span class="checkbox-style mr-1"></span>
+                        Heading 3
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="04-H4" class="heading-4">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="04-H4"
+                        />
+                        <span class="checkbox-style mr-1"></span>
+                        Heading 4
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="05-H5" class="heading-5">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="05-H5"
+                        />
+                        <span class="checkbox-style mr-1"></span>
+                        Heading 5
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="06-H6" class="heading-6">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="06-H6"
+                        />
+                        <span class="checkbox-style mr-1"></span>
+                        Heading 6
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="07-Subtitle" class="subtitle">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="07-Subtitle"
+                        />
+                        <span class="checkbox-style mr-1"></span>
+                        subtitle
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="08-Body" class="text-body">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="08-Body"
+                        />
+                        <span class="checkbox-style mr-1"></span>
+                        text body
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="09-Callout" class="callout">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="09-Callout"
+                        />
+                        <span class="checkbox-style mr-1"></span>
+                        callout
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="10-Subhead" class="subhead">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="10-Subhead"
+                        />
+                        <span class="checkbox-style mr-1"></span>
+                        subhead
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="11-Footnote" class="footnote">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="11-Footnote"
+                        />
+                        <span class="checkbox-style mr-1"></span>
+                        footnote
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="12-Caption" class="caption">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="12-Caption"
+                        />
+                        <span class="checkbox-style mr-1"></span>
+                        caption
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="13-Label" class="label">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="13-Label"
+                        />
+                        <span class="checkbox-style mr-1"></span>
+                        label
+                      </label>
+                    </li>
+                    <li class="typeface-list-item">
+                      <label for="14-Small" class="small">
+                        <input
+                          type="checkbox"
+                          name="select-typography-checkbox"
+                          id="14-Small"
+                        />
+                        <span class="checkbox-style mr-1"></span>
+                        small
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Button - Apply Changes for Typography -->
+
+                <button
+                  class="btn btn-primary btn-block"
+                  id="updateFonts"
+                  name="updateFonts"
+                >
+                  Update Font Styles
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End: Typeface Tab -->
+      </div>
+      <!-- End: Plugin Tab Content -->
+    </div>
+    <!-- End: Body Inner Wrapper -->
+
+    <!-- Footer -->
+    <footer>
+      <a
+        class="d-inline-block float-right"
+        id="openCohort"
+        href="https://www.cohort.work/"
+        target="_blank"
+        ><img
+          src="68d067ff358367434652639399dd5866.png"
+          alt="Arsenic"
+          height="20"
+      /></a>
+    </footer>
+    <!-- End: Footer -->
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/ion.rangeSlider.js"></script>
+    <!-- notice the "../resources_" here. It's because webview.js will be compiled in a different folder with the prefix. -->
+    <script src="../resources_colors.js"></script>
+    <script src="../resources_fonts.js"></script>
+  </body>
+</html>
